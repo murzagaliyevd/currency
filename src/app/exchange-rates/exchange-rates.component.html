@@ -1,0 +1,4 @@
+<div *ngIf="exchangeRate">
+  Курс {{currencyCode}} к RUB = {{exchangeRate}} (на {{date | date : 'dd.MM.yyyy H:mm:ss'}})
+</div>
+<p *ngIf="errorMessage">{{errorMessage}}</p>
